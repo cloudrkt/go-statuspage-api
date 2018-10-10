@@ -15,7 +15,6 @@ type Subscriber struct {
 	Mode          *string      `json:"mode,omitempty"`
 	QuarantinedAt *time.Time   `json:"quarantined_at,omitempty"`
 	PurgeAt       *time.Time   `json:"purge_at,omitempty"`
-	Components    []*Component `json:"components,omitempty"`
 }
 
 type NewSubscriber struct {
