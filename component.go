@@ -7,9 +7,9 @@ import (
 )
 
 type Component struct {
+	ID          *string    `json:"id,omitempty"`
 	CreatedAt   *time.Time `json:"created_at,omitempty"`
 	Description *string    `json:"description,omitempty"`
-	ID          *string    `json:"id,omitempty"`
 	Name        *string    `json:"name,omitempty"`
 	PageID      *string    `json:"page_id,omitempty"`
 	Position    *int       `json:"position,omitempty"`
