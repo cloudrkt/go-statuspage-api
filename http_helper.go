@@ -59,6 +59,9 @@ func (c *Client) doRequest(req *http.Request, out interface{}) error {
 	if len(b) == 0 {
 		b = []byte{'{', '}'}
 	}
+
+	// fmt.Print(string(b))
+
 	err = json.Unmarshal(b, &out)
 	if err != nil {
 		return err
